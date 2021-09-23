@@ -1,2 +1,46 @@
 # Ucaps-seq
-Source codes for Ucaps-seq
+This repository includes source codes used in ***Sequencing uracil in DNA at single-nucleotide resolution***.
+
+## Data availability
+All raw sequencing data are available at NCBI Sequence Read Archive with BioProject ID [PRJNA728500](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA728500)
+
+## Samples
+
+| sample title | pipeline |
+| :---: | :---: |
+| Hela UNGKO Mock rep1 | Hela-S3 |
+| Hela UNGKO Mock rep2 | Hela-S3 |
+| Hela UNGKO PMX rep1 | Hela-S3 |
+| Hela UNGKO PMX rep2 | Hela-S3 |
+| Hela UNGKO Mock inp rep1 | Hela-S3 |
+| Hela UNGKO Mock inp rep2 | Hela-S3 |
+| Hela UNGKO PMX inp rep1 | Hela-S3 |
+| Hela UNGKO PMX inp rep2 | Hela-S3 |
+| HEK293T WT rep1 | HEK293T |
+| HEK293T WT rep2 | HEK293T |
+| HEK293T NOD rep1 | HEK293T |
+| HEK293T NOD rep2 | HEK293T |
+| HEK293T 10X rep1 | HEK293T |
+| HEK293T 10X rep2 | HEK293T |
+| HEK293T 50X rep1 | HEK293T |
+| HEK293T 50X rep2 | HEK293T |
+| HEK293T 100X rep1 | HEK293T |
+| HEK293T 100X rep2 | HEK293T |
+| MM Bcell AK rep1 | CH12F3 |
+| MM Bcell AK rep2 | CH12F3 |
+| MM Bcell UK rep1 | CH12F3 |
+| MM Bcell UK rep2 | CH12F3 |
+| Oligo dU | synthetic DNA |
+| Oligo input | synthetic DNA |
+
+
+## pre-analysis
+First of all, FastQC was used for quality control and BWA mem was used for aligning reads to appropriate refernece genome.
+```bash
+# quickly check
+fastqc --noextract --format=fastq *.fastq.gz
+
+# bwa mapping
+bwa mem $bwa_index_path sample.R1.fastq.gz sample.R2.fastq.gz | samtools view -Sb - > sample.bam
+```
+When this step is complete, the downstream analysis can be performed based on pipeline to which the sample belongs.
