@@ -1,11 +1,18 @@
 # Pipeline for synthetic DNA sequencing data
+
+## samples in this parts
+| sample title | pipeline |
+| :---: | :---: |
+| Oligo dU | synthetic DNA |
+| Oligo input | synthetic DNA |
+
 [synthetic DNA reference genome](https://github.com/Jyyin333/Ucaps-seq/blob/main/files/sDNA.fa) was used for creating BWA index.
-```
+```bash
 bwa index sDNA.fa
 ```
 
 After mapping, using Python script:
-```
+```bash
 # for dU sample
 python Treat.stat.py --bam dU.bam --out dU.res --json dU.json
 
