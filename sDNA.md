@@ -1,4 +1,4 @@
-# Pipeline for synthetic DNA sequencing data
+# Pipeline for synthetic DNA
 
 ## samples in this parts
 | sample title | pipeline |
