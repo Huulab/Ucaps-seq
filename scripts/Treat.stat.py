@@ -9,7 +9,7 @@ from collections import defaultdict
 parser = argparse.ArgumentParser()
 parser.add_argument("--bam", required=True, help="bam file with bai index")
 parser.add_argument("--out", required=True, help="file name to save statistical results")
-parser.add_argument('--json',help='statistic cigars for those reads in keeps.')
+parser.add_argument('--json',help='collect cigars for those reads in keeps.')
 args = parser.parse_args()
 
 
