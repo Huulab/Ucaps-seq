@@ -151,5 +151,4 @@ for sm in `ls *RT_HeLaS3_hg19.10kb.tsv`
 do
 	Rscript RT_test.r --input $sm --output ${sm%.*}.wtest_res.txt --outfig ${sm%.*}.pdf
 done
-
 ```
