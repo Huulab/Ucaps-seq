@@ -111,7 +111,7 @@ sm_list=[
 
 rule all:
 	input:
-		expand()
+		expand("{sm}-RT_HeLaS3_hg19.10kb.tsv", sm=sm_list)
 
 rule select_T:
 	input:
