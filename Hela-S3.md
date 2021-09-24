@@ -1,6 +1,6 @@
 # Pipeline for Hela-S3
 
-## samples in this parts
+## samples in this part
 | sample title | pipeline |
 | :---: | :---: |
 | Hela UNGKO Mock rep1 | Hela-S3 |
