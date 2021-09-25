@@ -40,7 +40,15 @@ First of all, FastQC was used for quality control and BWA mem was used for align
 # quickly check
 fastqc --noextract --format=fastq *.fastq.gz
 
-# bwa mapping
+# mapping and sort
 bwa mem $bwa_index_path sample.R1.fastq.gz sample.R2.fastq.gz | samtools view -Sb - > sample.bam
+picard SortSam -I sample.bam -O sample_sorted.bam --SORT_ORDER true --CREATE_INDEX true 
 ```
 When this step is complete, the downstream analysis can be performed based on pipeline to which the sample belongs.
+
+
+## pipeline
+- [Ucaps-seq for synthetic DNA samples](https://github.com/Jyyin333/Ucaps-seq/blob/main/sDNA.md)
+- [Ucaps-seq for Hela-S3 samples](https://github.com/Jyyin333/Ucaps-seq/blob/main/Hela-S3.md)
+- [Ucaps-seq for CH12F3 samples]()
+- [Ucaps-seq for HEK293T samples](https://github.com/Jyyin333/Ucaps-seq/blob/main/HEK293T.md)
