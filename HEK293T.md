@@ -1,3 +1,4 @@
+# Pipeline for HEK293T
 
 ## samples in this part
 | sample title | pipeline |
@@ -35,9 +36,9 @@ sm_list=[
 
 
 rule project:
-		input:
-			expand("{sm}.merged.sort.bed.gz.tbi", sm=sm_list),
-			expand("{sm}.merged.sort.bam", sm=sm_list)
+	input:
+		expand("{sm}.merged.sort.bed.gz.tbi", sm=sm_list),
+		expand("{sm}.merged.sort.bam", sm=sm_list)
 
 
 # remove duplicates
