@@ -32,6 +32,14 @@ All raw sequencing data are available at NCBI Sequence Read Archive with BioProj
 | MM Bcell UK rep2 | CH12F3 |
 | Oligo dU | synthetic DNA |
 | Oligo input | synthetic DNA |
+| AmP rnf rep1 | AmP |
+| AmP rnf rep2 | AmP |
+| AmP site3 rep1 | AmP |
+| AmP site3 rep2 | AmP |
+| AmP OT1 rep1 | AmP |
+| AmP WT rnf rep1 | AmP |
+| AmP WT site3 rep1 | AmP |
+| AmP WT OT1 rep1 | AmP |
 
 
 ## pre-analysis
