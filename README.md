@@ -58,5 +58,5 @@ When this step is complete, the downstream analysis can be performed based on pi
 ## pipeline
 - [Ucaps-seq for synthetic DNA samples](https://github.com/Jyyin333/Ucaps-seq/blob/main/sDNA.md)
 - [Ucaps-seq for Hela-S3 samples](https://github.com/Jyyin333/Ucaps-seq/blob/main/Hela-S3.md)
-- [Ucaps-seq for CH12F3 samples]()
+- [Ucaps-seq for CH12F3 samples](https://github.com/Jyyin333/Ucaps-seq/blob/main/CH12F3.md)
 - [Ucaps-seq for HEK293T samples](https://github.com/Jyyin333/Ucaps-seq/blob/main/HEK293T.md)
