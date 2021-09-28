@@ -126,7 +126,7 @@ rule tabix:
 
 ```
 
-To detect potential offtargets, we first pileup all reads and then filter sites abide by rules as shown in  FigureS5g, at last, DESeq2 was used for 
+To detect potential offtargets, we first pileup all reads and then filter sites abide by rules as shown in  FigureS5g. At last, DESeq2 was used for 
 testing whether the difference was statistically significant.
 ```bash
 # pileup
@@ -134,10 +134,13 @@ python plreads.py -t HEK293T_NOD_rep1.merged.sort.bed.gz HEK293T_NOD_rep2.merged
 -g hg19.fa -o HEK293T_NOD.pl
 
 # filter sites
-python filtersites.py HEK293T_NOD.pl HEK293T_NOD.filter.sites
+python filtersites.py -i HEK293T_NOD.pl -o HEK293T_NOD.filter.sites -bl hg19-blacklist.v2.bed.gz
 
 # call offtargets
 Rscript call_targets.r --treat HEK293T_NOD_rep1.merged.sort.bam HEK293T_NOD_rep2.merged.sort.bam --control HEK293T_WT_rep1.merged.sort.bam HEK293T_WT_rep2.merged.sort.bam \
 --window 30 --sites HEK293T_NOD.filter.sites --out HEK293T_NOD.candidate.sites
 
 ```
+
+## Targeted Amplicon PCR
+For analysis of amplicon sequencing data, [click here](https://github.com/Jyyin333/Ucaps-seq/blob/main/AmP.md) to see details.
