@@ -43,7 +43,7 @@ All raw sequencing data are available at NCBI Sequence Read Archive with BioProj
 
 
 ## pre-analysis
-First of all, FastQC was used for quality control and BWA mem was used for aligning reads to appropriate refernece genome.
+First of all, unless otherwise stated, FastQC was used for quality control and BWA mem was used for aligning reads to appropriate refernece genome for most samples.
 ```bash
 # quickly check
 fastqc --noextract --format=fastq *.fastq.gz
