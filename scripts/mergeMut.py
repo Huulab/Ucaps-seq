@@ -74,8 +74,8 @@ def main():
 
 	bamfile = pysam.AlignmentFile(args.bam)
 	with open(str(args.o)+'.tmp', 'w') as fo:
-		print('\t'.join(map(str, ['chrom','0_based_pos','ref','mut','count','strand','strand_counts','all_counts'])), file = fo)
-
+		#print('\t'.join(map(str, ['chrom','0_based_pos','ref','mut','count','strand','strand_counts','all_counts'])), file = fo)
+		
 		for strand in ['+','-']:
 			for chrom in chroms:
 				tmp = res[strand][chrom]
