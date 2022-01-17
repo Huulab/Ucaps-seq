@@ -1,5 +1,5 @@
 # Ucaps-seq
-This repository includes source codes used in ***Sequencing uracil in DNA at single-nucleotide resolution***.
+This repository includes source codes used in ***UdgX-Mediated Uracil Sequencing at Single-Nucleotide Resolution***.
 
 ## Data availability
 All raw sequencing data are available at NCBI Sequence Read Archive with BioProject ID [PRJNA728500](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA728500)
