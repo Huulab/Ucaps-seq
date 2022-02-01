@@ -43,7 +43,7 @@ pattern = re.compile(r'^chr12:(\d+)-(\d+)$')
 
 
 
-for line in f:
+for line in args.region:
 
     base_counts = {'A':0,'C':0,'G':0,'T':0}
 
