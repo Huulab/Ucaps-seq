@@ -114,4 +114,4 @@ chr1    185056757       C       T       59      +       391126  391126
 ...
 ```
 
-This file is used to calculate mutation rates.
+This file was used to calculate mutation rates.
